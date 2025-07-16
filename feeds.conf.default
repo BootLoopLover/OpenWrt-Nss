@@ -1,3 +1,6 @@
+src-git sqm_scripts_nss https://github.com/qosmio/sqm-scripts-nss.git
+src-git nss_packages https://github.com/NuhaHumaira/nss-packages.git;NSS-12.5-K6.x-wwan
+src-git custom https://github.com/dotywrt/owrt-packages.git;K66_R1
 src-git packages https://git.openwrt.org/feed/packages.git^c7d1a8c1ae976bd0ad94a351d82ee8fbf16a81f0
 src-git luci https://git.openwrt.org/project/luci.git^d6b13f648339273facc07b173546ace459c1cabe
 src-git routing https://git.openwrt.org/feed/routing.git^85d040f28c21c116c905aa15a66255dde80336e7
