@@ -96,14 +96,14 @@ jobs:
         run: |
           git clone https://$GH_PAT@github.com/dotywrt/DEFAULT.git files
           rm -rf files/.git
-          rm files/www/luci-static/resources/view/status/include/10_system.js
+          # rm files/www/luci-static/resources/view/status/include/10_system.js
           chmod 755 files/etc/uci-defaults/99-setup
 
       - name: Setup firmware version string
         run: |
           TODAY=$(date '+%d-%b-%Y')
-          sed -i "s/DDDD/${TODAY}/g" files/www/luci-static/resources/view/status/include/10_system.js
-          sed -i "s/XXXX/${FWMODEL}/g" files/www/luci-static/resources/view/status/include/10_system.js
+          # sed -i "s/DDDD/${TODAY}/g" files/www/luci-static/resources/view/status/include/10_system.js
+          # sed -i "s/XXXX/${FWMODEL}/g" files/www/luci-static/resources/view/status/include/10_system.js
           sed -i "s/XXXX/$(echo "${FWMODEL}" | tr '[:upper:]' '[:lower:]')/g" files/etc/opkg/customfeeds.conf
           sed -i "s/XXXX/${FWMODEL}/g" files/etc/banner
 
