@@ -1,13 +1,28 @@
-# BULDER
+# STEP FOR BUILD
 
-<pre>
-  <code>
-    wget -O buil.sh https://raw.githubusercontent.com/dotywrt/OpenWrt-Nss/main/build.sh && chmod +x buil.sh && ./buil.sh
-  </code>
-</pre>
+```
+git clone https://github.com/BootLoopLover/OpenWrt-Nss.git
+```
 
-## INFO
-- NSS VERSION 11/12
-- OPENWRT VERSION 24.10.2
+```
+./scripts/feeds update -a
+./scripts/feeds install -a
+```
 
-## TRY AND ERROR
+```
+cp nss-setup/config-nss.seed .config
+```
+
+```
+make menuconfig
+```
+
+# TICK ALL THE PACKAGE YOU NEED
+
+```
+make -j5 V=s
+```
+
+
+# Based On Openwrt Official firmware v24.10.2
+# Add On Nss Package Firmware By Qosmio
