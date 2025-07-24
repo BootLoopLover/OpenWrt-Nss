@@ -1,4 +1,4 @@
-# STEP FOR BUILD
+# HOW TO BUILD
 
 ```
 git clone https://github.com/BootLoopLover/OpenWrt-Nss.git
