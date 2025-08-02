@@ -2,6 +2,7 @@
 
 ```
 git clone https://github.com/BootLoopLover/OpenWrt-Nss.git
+cd OpenWrt-Nss
 ```
 
 ```
