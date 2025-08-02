@@ -1,6 +1,6 @@
 src-git sqm_scripts_nss https://github.com/qosmio/sqm-scripts-nss.git
 src-git nss_packages https://github.com/BootLoopLover/nss-packages.git;NSS-12.5-K6.x-quectel
-src-git packages https://github.com/BootLoopLover/packages.git
-src-git luci https://github.com/BootLoopLover/luci.git
+src-git packages https://github.com/BootLoopLover/packages.git;master
+src-git luci https://github.com/BootLoopLover/luci.git;master
 src-git routing https://git.openwrt.org/feed/routing.git^85d040f28c21c116c905aa15a66255dde80336e7
 src-git telephony https://git.openwrt.org/feed/telephony.git^2a4541d46199ac96fac214d02c908402831c4dc6
